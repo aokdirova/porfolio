@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aygul's Portfolio</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./stylee.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <button class="nav-toggle" area-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">HOME</a></li>
+
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">SKILLS</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">ABOUT ME</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#work" class="nav__link">PROJECTS</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Aygul Okdirova</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        FRONT-END DEV
+      </p>
+      <img
+        class="intro__img"
+        src="./assets/images/IMG_2740.jpg"
+        alt="a picture of Aygul Okdirova smiling"
+      />
+    </section>
+
+    <!-- My skills -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">Technical Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>Technologies</h3>
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JavaScript</p>
+        </div>
+
+        <div class="skill">
+          <h3>Frameworks/Libraries</h3>
+          <p><i></i>React (learning)</p>
+          <p><i></i>Flutter (learning)</p>
+        </div>
+
+        <div class="skill">
+          <h3>Tools</h3>
+          <p><i></i>VS Code</p>
+          <p><i></i>Atom</p>
+          <p><i></i>Git/Github</p>
+        </div>
+      </div>
+      <a href="#work" class="btn">My projects</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Web Developer & Petroleum Engineer
+      </p>
+      <div class="about-me__body">
+        <p>
+          A self-taught front-end developer with a background in Petroleum
+          engineering. Passionate about building dynamic and streamlined pages.
+          Always striving for quick and elegant solutions. Attentive to details
+          and have a good eye for design.
+        </p>
+        <p>
+          A constant learner who is excited to be a part of a dynamic team.
+        </p>
+      </div>
+      <img
+        src="./assets/images/about-me.JPG"
+        alt="image of Aygul leaning against the wall and smiling"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Projects</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Click on the project to have a look
+      </p>
+      <div class="portfolio">
+        <a
+          href="https://react-burger-builder-theta.vercel.app/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="./assets/images/burger-builder.png"
+            alt="burger-builder project"
+            class="portfolio__img"
+          />
+        </a>
+
+        <a
+          href="https://programming-jokes-teller.netlify.app/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="./assets/images/joke-teller.png"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+
+        <a
+          href="https://me-and-guitar.netlify.app/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="./assets/images/videoplayer.jpg"
+            alt="video-player-project"
+            class="portfolio__img"
+          />
+        </a>
+
+        <a
+          href="https://form-validation-1409.netlify.app/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="/assets/images/submit-form.png"
+            alt="submit-form"
+            class="portfolio__img"
+          />
+        </a>
+        <a href="https://wetter-app-1409.netlify.app/" class="portfolio__item" target="_blank">
+          <img
+            src="./assets/images/weather-app.png"
+            alt="weather-app"
+            class="portfolio__img"
+          />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img
+            src="./assets/images/my-portfolio.png"
+            alt="portfolio-website"
+            class="portfolio__img"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <footer class="footer" id="contact">
+      <a href="mailto:aokdirova@gmail.com" class="footer__link"
+        >aokdirova@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/aokdirova/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/aokdirova"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
