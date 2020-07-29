@@ -165,12 +165,8 @@ header {
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  margin-left: 8em;
+  margin:0
   padding: 0;
-}
-
-.nav__item {
-  margin-top: 2em;
 }
 
 .nav__link {
@@ -178,7 +174,7 @@ header {
   text-align: center;
   color: inherit;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h2);
   text-decoration: none;
 }
 
