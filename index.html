@@ -10,6 +10,7 @@
       type="image/png"
       href="./assets/images/apple-touch-icon.png"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
@@ -27,7 +28,7 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600,900|Source+Sans+Pro:300,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600,900,700,400,300|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
 
@@ -66,13 +67,28 @@
     </header>
     <!-- Introduction -->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
+      <h1
+        data-aos="fade-left"
+        data-aos-duration="900"
+        data-aos-easing="linear"
+        class="section__title section__title--intro"
+      >
         Hi, I am <strong>Aygul Okdirova</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">
+      <p
+        data-aos="fade-zoom-in"
+        data-aos-easing="linear"
+        data-aos-delay="600"
+        data-aos-duration="900"
+        data-aos-offset="0"
+        class="section__subtitle section__subtitle--intro"
+      >
         FRONT-END DEV
       </p>
       <img
+        data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-easing="linear"
         class="intro__img"
         src="./assets/images/IMG_2740.jpg"
         alt="a picture of Aygul Okdirova smiling"
@@ -80,7 +96,13 @@
     </section>
 
     <!-- My skills -->
-    <section class="my-skills" id="skills">
+    <section
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1100"
+      class="my-skills"
+      id="skills"
+    >
       <h2 class="section__title section__title--skills">Technical Skills</h2>
       <div class="skills">
         <div class="skill">
@@ -108,7 +130,13 @@
     </section>
 
     <!-- About me -->
-    <section class="about-me" id="about">
+    <section
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1100"
+      class="about-me"
+      id="about"
+    >
       <h2 class="section__title section__title--about">Who I am</h2>
       <p class="section__subtitle section__subtitle--about">
         Web Developer & Petroleum Engineer
@@ -132,99 +160,180 @@
     </section>
 
     <!-- My work-->
-    <section class="my-work" id="work">
+    <section
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1100"
+      class="my-work"
+      id="work"
+    >
       <h2 class="section__title section__title--work">My Projects</h2>
       <p class="section__subtitle section__subtitle--work">
-        Click on the project to have a look
+        Hover over the project to have a look
       </p>
+
       <div class="portfolio">
-        <a
-          href="https://city-tours-1409.netlify.app/"
-          class="portfolio__item"
-          target="_blank"
-        >
+        <figure class="portfolio__item">
           <img
             src="./assets/images/city-tours.png"
             alt="city tours project"
             class="portfolio__img"
           />
-        </a>
-        <a
-          href="https://elated-wiles-372388.netlify.app/"
-          class="portfolio__item"
-          target="_blank"
-        >
+
+          <figcaption class="caption">
+            A fully responsive simple landing page for City Tours. This website
+            is built using stateful components. Technologies used: React.js || CSS
+            (SASS)
+            <a
+              class="caption__link"
+              href="https://github.com/aokdirova/react-city-tours"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> Source Code</a
+            >
+            <a
+              class="caption__link"
+              href="https://city-tours-1409.netlify.app/"
+              target="_blank"
+            >
+              See Live
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio__item">
           <img
             src="./assets/images/Natours.png"
             alt="landing page project"
             class="portfolio__img"
           />
-        </a>
-        <a
-          href="https://react-burger-builder-theta.vercel.app/"
-          class="portfolio__item"
-          target="_blank"
-        >
+
+          <figcaption class="caption" style="margin-top: 0;">
+            Landing page for Natours (still in progress). Animations and effects
+            are created utilizing solely powers of CSS (SASS). 
+            Technologies used: HTML || CSS (SASS)
+
+            <a
+              class="caption__link"
+              href="https://github.com/aokdirova/landing-page-outdoors"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>Source Code</a
+            >
+            <a
+              class="caption__link"
+              href="https://elated-wiles-372388.netlify.app/"
+              target="_blank"
+            >
+              See Live
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio__item">
           <img
             src="./assets/images/burger-builder.png"
             alt="burger-builder project"
             class="portfolio__img"
           />
-        </a>
 
-        <a
-          href="https://programming-jokes-teller.netlify.app/"
-          class="portfolio__item"
-          target="_blank"
-        >
+          <figcaption class="caption" >
+              A fully responsive Single Page Web app for ordering burgers. Built utilizing both stateful and stateless components in React. 
+            Technologies used: React.js || Ajax || CSS || Firebase 
+            <a class="caption__link" href="https://github.com/aokdirova/react-burger-builder" target="_blank" > <i class="fab fa-github"></i> Source Code</a>
+            <a class="caption__link"
+              href="https://react-burger-builder-theta.vercel.app/"
+              target="_blank"
+            >
+              See Live
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio__item">
           <img
             src="./assets/images/joke-teller.png"
-            alt=""
+            alt="programming-jokes-teller project"
             class="portfolio__img"
           />
-        </a>
 
-        <a
-          href="https://me-and-guitar.netlify.app/"
-          class="portfolio__item"
-          target="_blank"
-        >
+          <figcaption class="caption" style="margin-top: 0;" >
+              A robot telling programming jokes on a click of a button. Built using Vanilla Javascript. Joke API is used to retrieve jokes and Text-to-Speech API for converting jokes to a speech. Technologies used: HTML || CSS || JavaScript || Ajax  
+ 
+            <a class="caption__link" href="https://github.com/aokdirova/programming-joke-teller" target="_blank" >  <i class="fab fa-github"></i>Source Code</a>
+            <a class="caption__link"
+              href="https://programming-jokes-teller.netlify.app/"
+              target="_blank"
+            >
+              See Live
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio__item">
           <img
             src="./assets/images/videoplayer.jpg"
             alt="video-player-project"
             class="portfolio__img"
           />
-        </a>
 
-        <a
-          href="https://form-validation-1409.netlify.app/"
-          class="portfolio__item"
-          target="_blank"
-        >
+          <figcaption class="caption" style="margin-top: 0;">
+            Custom video player, which has all the functionalities such as speed and volume controls as well as fullscreen mode adjusted according to a browser used by a client. 
+            Technologies used: HTML || CSS || JavaScript  
+            <a  class="caption__link" href="https://github.com/aokdirova/video-player" target="_blank" >  <i class="fab fa-github"></i> Source Code</a>
+            <a class="caption__link" href="https://me-and-guitar.netlify.app/" target="_blank">
+              See Live</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio__item">
           <img
             src="/assets/images/submit-form.png"
             alt="submit-form"
             class="portfolio__img"
           />
-        </a>
-        <a
-          href="https://wetter-app-1409.netlify.app/"
-          class="portfolio__item"
-          target="_blank"
-        >
+
+          <figcaption class="caption">
+            Registration form page built using JavaScript for input validation. Whenever the input is empty, warning will appear. 
+              Technologies used: HTML || CSS (Flexbox)|| JavaScript  
+            <a class="caption__link" href="https://github.com/aokdirova/submit-form" target="_blank" ><i class="fab fa-github"></i>Source Code</a>
+            <a class="caption__link" href="https://form-validation-1409.netlify.app/" target="_blank">
+              See Live
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio__item">
           <img
             src="./assets/images/weather-app.png"
             alt="weather-app"
             class="portfolio__img"
           />
-        </a>
-        <a href="#" class="portfolio__item">
+
+          <figcaption class="caption" style="margin-top: 0;">
+            A weather app built utilizing OpenWeather API to retrieve weather JSON data. User must allow location for the API to work. Visual representation of a weather is adjusted accordingly. 
+            Technologies used: HTML || CSS || JavaScript 
+            <a  class="caption__link"  href="https://github.com/aokdirova/weather-app" target="_blank" > <i class="fab fa-github"></i> Source Code</a>
+            <a   class="caption__link" href="https://wetter-app-1409.netlify.app/" target="_blank"
+              >See Live</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio__item">
           <img
             src="./assets/images/my-portfolio.png"
             alt="portfolio-website"
             class="portfolio__img"
           />
-        </a>
+
+          <figcaption class="caption">
+           A fully responsive portfolio website. Animation On Scroll (AOS) plugin is used for section animations.  Technologies used: HTML || CSS || JavaScript 
+            <a  class="caption__link" href="https://github.com/aokdirova/porfolio" target="_blank"><i class="fab fa-github"></i>  Source Code</a>
+            <a  class="caption__link"  href="#" > See Live </a>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -255,4 +364,8 @@
     </footer>
   </body>
   <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
