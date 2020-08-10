@@ -1,9 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aygul portfolio website",
   "main": "script.js",
-  "scripts": {},
+  "scripts": {
+    "build": ""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aokdirova/porfolio.git"
@@ -14,5 +16,6 @@
     "url": "https://github.com/aokdirova/porfolio/issues"
   },
   "homepage": "https://github.com/aokdirova/porfolio#readme",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {}
 }
